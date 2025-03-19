@@ -71,11 +71,11 @@
         raise_layer {
             display-name = "raise";
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |     |      |       |      |       |       |
-// |       | INS  | PSCR | GUI   | HOME  |      |                |     | PGUP | PGDN  |      |       |       |
-// | DEL   | ALT  | CTRL | SHIFT | END   | CAPS |                | <-  |   v  |   ^   |  ->  |  DEL  | BKSPC |
-// |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |     |      |       |      |       |       |
-//                |      |       |       |      | ESC  |  |      |     |      |       |      |
+// | BTCLR | BT1  | BT2  |  BT3     |  BT4  |  BT5 |                |     |      |       |      |       |       |
+// |       | INS  | PSCR | APP_MENU | HOME  |      |                |     | PGUP | PGDN  |      |       |       |
+// | DEL   | ALT  | CTRL | SHIFT    | END   | CAPS |                | <-  |   v  |   ^   |  ->  |  DEL  | BKSPC |
+// |       | UNDO | CUT  | COPY     | PASTE |      |      |  |      |     |      |       |      |       |       |
+//                |      |          |       |      | ESC  |  |      |     |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &trans     &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &kp HOME     &trans                        &trans    &kp PG_UP &kp PG_DN  &trans    &kp N0  &trans
